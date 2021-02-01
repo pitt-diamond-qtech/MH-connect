@@ -18,6 +18,10 @@ import time
 from sys import exit
 
 def run_T3_to_txt(out_filename):
+    '''
+    Note that the output file must exist before running the function.
+    '''
+
     
     if sys.version_info[0] < 3:
         print("[Warning] Python 2 is not fully supported. It might work, but "
@@ -241,3 +245,5 @@ def run_T3_to_txt(out_filename):
     print('hey')
     closeDevices()
     readable_outputfile.close()
+    
+run_T3_to_txt('..\\data\\tttrmode.out')
