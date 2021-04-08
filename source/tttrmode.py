@@ -47,9 +47,9 @@ def run_T3_to_txt(out_filename):
     offset = 0 # you can change this, meaningful only in T3 mode
     tacq = 1000 # Measurement time in millisec, you can change this
     syncDivider = 1 # you can change this, observe mode! READ MANUAL!
-    syncEdgeTrg = -50 # you can change this (in mV)
+    syncEdgeTrg = -150 # you can change this (in mV)
     syncChannelOffset = -5000 # you can change this (in ps, like a cable delay)
-    inputEdgeTrg = -50 # you can change this (in mV)
+    inputEdgeTrg = -150 # you can change this (in mV)
     inputChannelOffset = 0 # you can change this (in ps, like a cable delay)
     
     # Variables to store information read from DLLs
