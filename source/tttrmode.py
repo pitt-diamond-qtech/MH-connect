@@ -17,7 +17,7 @@ import struct
 import time
 from sys import exit
 
-def run_T3_to_txt(out_filename):
+def run_T3_to_txt(multiharp,output_filename):
     '''
     Note that the output file must exist before running the function.
     '''
@@ -45,7 +45,7 @@ def run_T3_to_txt(out_filename):
     mode = MODE_T3 # set T2 or T3 here, observe suitable Syncdivider and Range!
     binning = 0 # you can change this, meaningful only in T3 mode
     offset = 0 # you can change this, meaningful only in T3 mode
-    tacq = 1000 # Measurement time in millisec, you can change this
+    tacq = multiharp.tacq # Measurement time in millisec, you can change this
     syncDivider = 1 # you can change this, observe mode! READ MANUAL!
     syncEdgeTrg = -150 # you can change this (in mV)
     syncChannelOffset = -5000 # you can change this (in ps, like a cable delay)
